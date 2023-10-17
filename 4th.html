@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <style>
+        .container {
+            display: flex;
+            width: 850px;
+            padding: 32px 48px;
+            justify-content: center;
+            align-items: center;
+            gap: 32px;
+            background: #F4F2FD;
+            color: #202842;
+        }
+
+        .box1 {
+            display: flex;
+            width: fixed 262px;
+            height: fixed 363px;
+            padding: 32px;
+            flex-direction: column;
+            align-items: center;
+            gap: 32px;
+            flex-shrink: 0;
+            border-radius: 8px;
+            background: #FFF;
+            box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
+        }
+
+        .box2 {
+            display: flex;
+            width: fixed 262px;
+            height: fixed 363px;
+            padding: 32px;
+            justify-content: center;
+            align-items: flex-start;
+            align-content: flex-start;
+            gap: 32px;
+            flex-shrink: 0;
+            flex-wrap: wrap;
+            border-radius: 8px;
+            background: #202842;
+            color: #FFFFFF;
+            box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
+        }
+
+        .box3 {
+            display: flex;
+            width: fixed 262px;
+            height: fixed 363px;
+            padding: 32px;
+            flex-direction: column;
+            align-items: center;
+            gap: 32px;
+            flex-shrink: 0;
+            border-radius: 8px;
+            background: #FFF;
+            box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
+        }
+
+        .carddetails {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 32px;
+            color: #202842;
+            background: #FFFFFF;
+            font-family: 'Nunito';
+        }
+
+        .card_detail {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            color: #202842;
+        }
+
+        .card_header {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+            align-self: stretch;
+            color: #202842;
+        }
+
+        .header_name {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .frame1 {
+            color: #202842;
+            font-family: 'Nunito';
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px;
+
+        }
+
+        .frame2 {
+            color: #202842;
+            font-family: 'Nunito';
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 16px;
+
+        }
+
+        .prize {
+            color: #202842;
+            font-family: 'Sans Serif' 'Collection';
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 36px;
+        }
+
+        .plain_details {
+            display: flex;
+            padding-left: 0px;
+            flex-direction: column;
+            align-items: flex-start;
+            font-family: 'Nunito';
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 16px;
+        }
+
+        .Group1 {
+            display: inline-flex;
+            width: 95px;
+            height: 24px;
+            padding-bottom: 1vh;
+        }
+
+        .frame6 {
+            display: inline-flex;
+            padding: 3px 4px;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .frame7 {
+            display: inline-flex;
+            padding: 8px 7px 3px 4px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            color: #202842;
+
+            font-family: Nunito;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 16px;
+
+        }
+
+        .Group2 {
+            display: inline-flex;
+            height: 24px;
+            padding-bottom: 1vh;
+        }
+
+        .Group3 {
+            display: inline-flex;
+            height: 24px;
+            padding-bottom: 1vh;
+
+        }
+
+        .Group4 {
+            display: inline-flex;
+            height: 24px;
+
+        }
+
+        .Button {
+            background: #202842;
+            display: flex;
+            padding: 8px 24px;
+            justify-content: center;
+            align-items: center;
+            gap: 32px;
+            color: #FFF;
+            font-family: 'Nunito';
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 22px;
+            border-radius: 50px;
+
+        }
+
+        .carddetail2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 32px;
+            color: #FFFFFF;
+        }
+
+        .carddetails2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            color: #FFFFFF;
+        }
+
+        .cardHeader2 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+            align-self: stretch;
+        }
+
+        .headerName2 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .frame_1 {
+            display: flex;
+            padding: 4px 8px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            color: #FFF;
+            font-family: Nunito;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px;
+        }
+
+        .Frame_2 {
+            display: flex;
+            padding: 0px 8px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            color: #FFF;
+            font-family: Nunito;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 16px;
+        }
+
+        .Prize2 {
+            display: flex;
+            padding: 0px 8px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            color: #FFF;
+            font-family: 'Nunito';
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 36px;
+            /* 100% */
+        }
+
+        .plandtl2 {
+            display: flex;
+            padding-left: 0px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .group_1 {
+            display: inline-flex;
+            height: 24px;
+            
+                }
+
+        .frame_6 {
+            display: inline-flex;
+            padding: 3px 4px;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .frame_7 {
+            display: inline-flex;
+            padding: 8px 8px 4px 4px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            color: #FFF;
+            font-family: 'Nunito';
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 16px;
+        }
+
+        .group_2 {
+            display: flex;
+            height: 24px;
+            padding-bottom: 1vh;
+            
+            
+        }
+
+        .group_3 {
+            display: inline-flex;
+            height: 24px;
+            padding-bottom: 1vh;
+          
+        }
+
+        .group_4 {
+            display: flex; 
+            height: 24px;
+            
+        }
+
+        .subscribtion {
+            display: flex;
+            padding: 8px 24px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 50px;
+            background: #FFF;
+            color: #1C1C1C;
+            font-family: Nunito;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 22px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">
+            <div class="carddetails">
+                <div class="card_detail">
+                    <div class="card_header">
+                        <div class="header_name">
+                            <div class="frame1">
+                                Free Plan
+                            </div>
+                            <div class="frame2">
+                                For personal
+                            </div>
+                        </div>
+                        <div class="prize">
+                            $0
+                        </div>
+                    </div>
+                    <div class="plain_details">
+                        <div class="Group1">
+                            <div class="frame6">
+                                <img src="/check-mark 1 (1).png" alt="">
+                            </div>
+                            <div class="frame7">
+                                1 user
+                            </div>
+                        </div>
+                        <div class="Group2">
+                            <div class="frame6">
+                                <img src="/check-mark 1 (1).png" alt="">
+                            </div>
+                            <div class="frame7">
+                                4 Web mails
+                            </div>
+                        </div>
+                        <div class="Group3">
+                            <div class="frame6">
+                                <img src="/check-mark 1 (1).png" alt="">
+                            </div>
+                            <div class="frame7">
+                                Responsive Website
+                            </div>
+                        </div>
+                        <div class="Group4">
+                            <div class="frame6">
+                                <img src="/check-mark 1 (1).png" alt="">
+                            </div>
+                            <div class="frame7">
+                                Free SLL
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="Button">
+                Subscribe now
+            </div>
+        </div>
+        <div class="box2">
+            <div class="carddetail2">
+                <div class="carddetails2">
+                    <div class="cardHeader2">
+                        <div class="headerName2">
+                            <div class="frame_1">
+                                Basic Plan
+                            </div>
+                            <div class="Frame_2">
+                                For small business
+                            </div>
+                        </div>
+                        <div class="Prize2">
+                            $29
+                        </div>
+                    </div>
+
+                    <div class="plandtl">
+                        <div class="group_1">
+                            <div class="frame_6"><img src="/check-mark 1 (2).png" alt=""></div>
+                            <div class="frame_7">4 users</div>
+                        </div>
+                        <div class="group_2">
+                            <div class="frame_6">
+                                <img src="/check-mark 1 (2).png" alt="">
+                            </div>
+                            <div class="frame_7">10 Web mails</div>
+                        </div>
+                        <div class="group_3">
+                            <div class="frame_6">
+                                <img src="/check-mark 1 (2).png" alt="">
+                            </div>
+                            <div class="frame_7">Responsive Website</div>
+                        </div>
+                        <div class="group_4">
+                            <div class="frame_6">
+                                <img src="/check-mark 1 (2).png" alt="">
+                            </div>
+                            <div class="frame_7">
+                                Free SSL
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subscribtion">
+                    Subscribe now
+                </div>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="carddetails">
+                <div class="card_detail">
+                    <div class="card_header">
+                        <div class="header_name">
+                            <div class="frame1">
+                                Pro Plan
+                            </div>
+                            <div class="frame2">
+                                For enterprise
+                            </div>
+                        </div>
+                        <div class="prize">
+                            $49
+                        </div>
+                    </div>
+                    <div class="plain_details">
+                        <div class="Group1">
+                            <div class="frame6">
+                                <img src="/check-mark 1 (1).png" alt="">
+                            </div>
+                            <div class="frame7">
+                                Unlimited users
+                            </div>
+                        </div>
+                        <div class="Group2">
+                            <div class="frame6">
+                                <img src="/check-mark 1 (1).png" alt="">
+                            </div>
+                            <div class="frame7">
+                                Unlimited Web mails
+                            </div>
+                        </div>
+                        <div class="Group3">
+                            <div class="frame6">
+                                <img src="/check-mark 1 (1).png" alt="">
+                            </div>
+                            <div class="frame7">
+                                Responsive Website
+                            </div>
+                        </div>
+                        <div class="Group4">
+                            <div class="frame6">
+                                <img src="/check-mark 1 (1).png" alt="">
+                            </div>
+                            <div class="frame7">
+                                Free SLL + SEO
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="Button">
+                Subscribe now
+            </div>
+        </div>
+</body>
+
+</html>
